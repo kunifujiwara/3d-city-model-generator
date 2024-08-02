@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from utils import download_file
+from .utils import download_file
 
 def get_geojson_links():
     
