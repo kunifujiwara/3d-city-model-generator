@@ -1,4 +1,4 @@
-#To download microsoft building footprints
+#To download microsoft building footprints (Beta)
 
 import pandas as pd
 
