@@ -9,16 +9,25 @@ authors = [
 maintainers = [
   {name = "Kunihiko Fujiwara", email = "kunihiko@nus.edu.sg"}
 ]
-classifiers = [
-  # Add your classifiers here if needed
-]
 license = {text = "MIT license"}
 dependencies = [
     "typer",
     "pandas",
     "requests",
     "pyproj",
-    "ipyleaflet"
+    "ipyleaflet",
+    "geopandas",
+    "rasterio",
+    "shapely",
+    "gdown",
+    "numpy",
+    "matplotlib",
+    "contextily",
+    "fiona",
+    "rtree",
+    "plotly",
+    "tqdm",
+    "scipy"
 ]
 
 [project.scripts]
@@ -39,7 +48,7 @@ homepage = "https://github.com/kunifujiwara/three_d_city_model_generator"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-packages = ["three_d_city_model_generator", "three_d_city_model_generator.download", "three_d_city_model_generator.utils"]
+packages = ["three_d_city_model_generator", "three_d_city_model_generator.download", "three_d_city_model_generator.geo", "three_d_city_model_generator.utils"]
 
 [tool.setuptools.package-data]
 "*" = ["*.*"]
